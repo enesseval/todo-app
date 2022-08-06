@@ -1,38 +1,110 @@
-.App {
+#container{
+  max-width: 500px;
+  margin: 150px auto 0 auto;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
+#content{
+  border: 1px solid #ccc;
+  padding: 15px;
+}
+
+#input{
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+}
+
+.todoText{
+  width: 100%;
+  border: none;
+  font-size: 30px;
+  padding-left: 10px;
+  appearance: none;
+}
+
+.todoText:focus{
+  outline: none;
+}
+
+.todoCheck:active{
+  background-color: red;
+}
+
+.list{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.checked{
+  background-color: red;
+}
+
+#footer{
+  border-top: 1px solid #ddd;
+  padding: 10px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btn{
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.show{
+  visibility: visible;
+}
+
+.hidden{
+  visibility: hidden;
+}
+
+.b{
+  visibility: visible!important;
+}
+
+.ic .btn{
+  cursor: unset;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.listItemDiv{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 5px 5px 15px 0;
+  border-bottom: 1px solid #d9d9d9;
 }
 
-.App-link {
-  color: #61dafb;
+.todoListItem{
+  width: 93%;
+  text-align: left;
+  padding-left: 10px;
+  font-size: 25px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todoListCheckBox{
+  width: 7%;
 }
+
+.overLine{
+  text-decoration: line-through;
+  color: #d9d9d9;
+}
+
+.marked{
+  border: 1px solid #aaa;
+}
+
+.deleteButton{
+  color: red;
+  background-color: transparent;
+  border: none;
+  padding: 10px 0 10px 0;
+}
+
